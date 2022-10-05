@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/imagen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"/>
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imagen_layout">
+        <CheckBox
+            android:id="@+id/astronauta"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="22dp"
+            android:text="Astronauta"/>
+
+        <CheckBox
+            android:id="@+id/caballo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="22dp"
+            android:text="Caballo"/>
+
+        <CheckBox
+            android:id="@+id/auto"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="22dp"
+            android:text="Auto"/>
+
+        <CheckBox
+            android:id="@+id/musica"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Musica"/>
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/checkbox">
+        <Button
+            android:id="@+id/info"
+            android:text="Info"
+            android:layout_marginLeft="70dp"/>
+        <Button
+            android:id="@+id/editar_info"
+            android:text="Editar Info"
+            android:layout_marginLeft="70dp"/>
+    </GridLayout>
+    <LinearLayout
+        android:id="@+id/texto_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/botones"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible">
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gianfranco De Paula"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/institucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instituto Tenologico De Las America"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/materia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introducción al Desarrollo de Aplicaciones Moviles"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

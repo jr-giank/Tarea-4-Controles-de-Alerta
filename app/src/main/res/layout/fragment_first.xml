@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/texto_editar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gianfranco De Paula"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/institucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instituto Tenologico De Las America"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/materia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introducción al Desarrollo de Aplicaciones Moviles"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"/>
+</LinearLayout>
